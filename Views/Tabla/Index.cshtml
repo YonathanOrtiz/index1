@@ -1,0 +1,25 @@
+﻿@Model List<proveedores.Models.ViewModels.ListTablaViewModel>
+    ViewBag.Title = "Registro de ventas";
+}
+<div class="row">
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>vendedor</th>
+                <th>producto</th>
+            </tr>
+            @foreach (var oElemento in Model)
+            {
+        <tr>
+            <td>@oElemento.idventa</td>
+            <td>@oElemento.vendedor</td>
+            <td>@oElemento.producto</td>
+        </tr>
+            }
+        </table>
+
+    </div>
+
+</div>
+
